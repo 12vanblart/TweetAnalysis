@@ -2,7 +2,7 @@
 ## 12vanblart ######
 ## Tweet Analysis ##
 ####################
-import csvkit
+import csv
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     totalTweets = int(input(
         "How many total tweets does your profile show (number, no commas)? "))
     csv_file = open('./tweets/tweets.csv', 'r', encoding='utf-8')
-    csv_reader = csvkit.reader(csv_file)
+    csv_reader = csv.reader(csv_file)
     for row in csv_reader:
         if row == 0:
             # Do nothing
