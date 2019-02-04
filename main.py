@@ -43,9 +43,14 @@ def main():
     print("This means you deleted",
           "{0:.2f}".format(100 - (100 * remainingTweets/totalTweets)), "% of your total tweets")
     print("###############")
-    print("You replied in", replyTweets, "tweets")
+    print("You replied in", replyTweets, " of your tweets")
     print("This translates to", "{0:.2f}".format(
         (100 * replyTweets/totalTweets)), "% of your total tweets")
+    print("###############")
+    print("Your tweets were ", replyTweets, " of your tweets")
+    print("This translates to", "{0:.2f}".format(
+        (100 * replyTweets/totalTweets)), "% of your total tweets")
+
     csv_file.close()
 
 
