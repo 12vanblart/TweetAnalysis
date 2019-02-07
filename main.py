@@ -96,7 +96,6 @@ def main():
     for i in range(len(commonInterface)):
         print(str(i+1), ": ", str(commonInterface[i][0]).strip(), ": ", "{0:.2f}".format(
             (100*commonInterface[i][1]/totalTweets)), "%", sep="")
-
     csv_file.close()
 
 
