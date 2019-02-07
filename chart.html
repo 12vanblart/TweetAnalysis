@@ -5,8 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>My Tweet Infographic</title>
-		<script src="https://cdnjs.com/libraries/Chart.js"></script>
-		<script src="./tweetCharts.js"></script>
+		<script src="./Chart.min.js"></script>
+		<link rel="stylesheet" href="./style.css" />
 	</head>
-	<body></body>
+	<body>
+		<div id="main-container">
+			<div id="header" class="default">
+				head goes here
+			</div>
+			<div id="content" class="default">
+				<canvas id="deleted"></canvas>
+				<canvas id="replies"></canvas>
+				<canvas id="reTweets"></canvas>
+				<canvas id="hashtagged"></canvas>
+				<canvas id="mentions"></canvas>
+				<canvas id="images"></canvas>
+				<canvas id="platform"></canvas>
+			</div>
+		</div>
+	</body>
+	<script src="./tweetCharts.js"></script>
 </html>
